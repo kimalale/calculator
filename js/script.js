@@ -26,7 +26,7 @@ equal.addEventListener('click', () => {
     else{
         number2 = inputview.value;
         inputPreview.textContent = `${number1}${operatorValue}${inputview.value}`;
-        inputview.value = operate(number2, number1, selectedOperator);
+        inputview.value = operate(number1, number2, selectedOperator);
         inputview.textContent = `=${inputview.value}`;
     }
 
